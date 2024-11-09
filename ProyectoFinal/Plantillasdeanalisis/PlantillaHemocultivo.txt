@@ -1,0 +1,49 @@
+--- Informe de Hemocultivo ---
+
+Folio del Análisis: 2024-HEMO-001234
+Fecha del Análisis: 31/10/2024
+
+Datos del Paciente:
+Nombre: Juan Pérez
+Edad: 45 años
+Sexo: Masculino
+Número de Historia Clínica: 123456
+
+Datos del Análisis:
+Fecha de Toma de Muestra: 30/10/2024
+Hora de Toma de Muestra: 10:00 AM
+Número de Muestras: 2 (aerobia y anaerobia)
+Método de Toma de Muestra: Punción venosa
+
+Resultados del Hemocultivo:
+Muestra Aerobia:
+  Resultado: Positivo
+  Microorganismo Aislado: Staphylococcus aureus
+  Sensibilidad a Antibióticos: 
+    Penicilina: Resistente
+    Vancomicina: Sensible
+    Ceftriaxona: Sensible
+
+Muestra Anaerobia:
+  Resultado: Negativo
+  Microorganismo Aislado: No se aislaron microorganismos
+
+Interpretación:
+La presencia de Staphylococcus aureus en la muestra aerobia indica una posible bacteriemia. Se recomienda iniciar tratamiento con vancomicina y realizar un seguimiento clínico del paciente.
+
+Comentarios Adicionales:
+Se sugiere repetir el hemocultivo en 48 horas para confirmar la erradicación del microorganismo.
+Considerar la evaluación de posibles focos de infección secundaria.
+
+Datos del Laboratorio:
+Nombre del Laboratorio: Laboratorio Clínico XYZ
+Dirección: Calle Salud No. 123, Ciudad
+Teléfono de Contacto: 555-123-4567
+
+Firma del Médico:
+Nombre: Dra. Ana López
+Especialidad: Microbiología Clínica
+Número de Licencia: 789012
+Fecha de Firma del Informe: 01/11/2024
+
+--- Fin del Informe ---
