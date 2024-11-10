@@ -12,6 +12,7 @@ Name Paciente::getName() {return name;}
 
 void Paciente::setNss(const string &n) {nss = n;}
 void Paciente::setCode(const string &c) {code = c;}
+void Paciente::setName(const Name &n){name =n;}
 
 string Paciente::toString() const {
     return "NSS: " + nss + "\n" +

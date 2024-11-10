@@ -9,9 +9,11 @@
 #include "paciente.hpp"
 #include "sanguinea.hpp"
 
+using namespace std;
+
 class AnalisisClinico{
-    //folio, Medico
     protected:
+    std::string folio;
     Name name;
     Fecha fecha;
     Paciente paciente;
@@ -19,24 +21,26 @@ class AnalisisClinico{
 
 
     public:
-    virtual void mostrarDatos() const = 0; // Método virtual puro
-    virtual ~AnalisisClinico() = default; // Destructor virtual
 
     AnalisisClinico();
     AnalisisClinico(const AnalisisClinico&);
+    virtual ~AnalisisClinico() = default; // Destructor virtual
 
     std::string toString()const;
     AnalisisClinico& operator=(const AnalisisClinico&);
 
+    std::string getFolio();
     Name getName();
     Fecha getFecha();
     Paciente getPaciente();
     Sanguinea getDanguinea();
 
+    void setFolio(const string&);
     void setName(const Name&);
     void setFecha(const Fecha&);
     void setPaciente(const Paciente&);
     void setSanguinea(const Sanguinea&);
+    virtual void mostrarDatos() const = 0; // Método virtual puro
 
     bool operator==(const AnalisisClinico&) const;
     bool operator!=(const AnalisisClinico&) const;

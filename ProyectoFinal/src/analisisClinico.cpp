@@ -2,20 +2,21 @@
 #include <stdexcept>
 using namespace std;
 
-AnalisisClinico::AnalisisClinico() : name(), fecha(), paciente(), sanguinea() {}
+AnalisisClinico::AnalisisClinico() : folio(),name(), fecha(), paciente(), sanguinea() {}
 
 AnalisisClinico::AnalisisClinico(const AnalisisClinico &a)
-    : name(a.name), fecha(a.fecha), paciente(a.paciente), sanguinea(a.sanguinea) {}
+    : folio(a.folio), name(a.name), fecha(a.fecha), paciente(a.paciente), sanguinea(a.sanguinea) {}
 
 string AnalisisClinico::toString() const {
-    return "Nombre: " + name.toString() + "\n" +
+    return "Folio:" + folio +"\n" +
+           "Nombre: " + name.toString() + "\n" +
            "Fecha: " + fecha.toString() + "\n" +
-           "Paciente: " + paciente.toString() + "\n" +
-           "Análisis Sanguíneo: " + sanguinea.toString();
+           "Paciente: \n" + paciente.toString() + "\n";
 }
 
 AnalisisClinico& AnalisisClinico::operator=(const AnalisisClinico &a) {
     if (this != &a) {
+        folio =a.folio;
         name = a.name;
         fecha = a.fecha;
         paciente = a.paciente;
@@ -24,11 +25,13 @@ AnalisisClinico& AnalisisClinico::operator=(const AnalisisClinico &a) {
     return *this;
 }
 
+string AnalisisClinico::getFolio(){return folio;}
 Name AnalisisClinico::getName() {return name;}
 Fecha AnalisisClinico::getFecha() {return fecha;}
 Paciente AnalisisClinico::getPaciente() {return paciente;}
 Sanguinea AnalisisClinico::getDanguinea() {return sanguinea;}
 
+void AnalisisClinico::setFolio(const string &f){folio = f;}
 void AnalisisClinico::setName(const Name &n) {name = n;}
 void AnalisisClinico::setFecha(const Fecha &f) {fecha = f;}
 void AnalisisClinico::setPaciente(const Paciente &p) {paciente = p;}

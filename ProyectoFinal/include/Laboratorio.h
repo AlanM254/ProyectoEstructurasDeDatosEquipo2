@@ -2,39 +2,46 @@
 #define LABORATORIO_H_INCLUDED
 
 #include <iostream>
+
 using namespace std;
 
-class Laboratorio{
+class Laboratorio {
+private:
     string nombre;
     string direccion;
     string telefono;
+
 public:
+    // Setters
+    void setNombre(const string& nombre) {
+        this->nombre = nombre;
+    }
+
+    void setDireccion(const string& direccion) {
+        this->direccion = direccion;
+    }
+
+    void setTelefono(const string& telefono) {
+        this->telefono = telefono;
+    }
 
     // Getters
-    std::string getNombre() const {
+    string getNombre() const {
         return nombre;
     }
 
-    std::string getDireccion() const {
+    string getDireccion() const {
         return direccion;
     }
 
-    std::string getTelefono() const {
+    string getTelefono() const {
         return telefono;
     }
 
-    // Setters
-    void setNombre(const std::string& nuevoNombre) {
-        nombre = nuevoNombre;
+    // Metodo que retorna la informacion del objeto
+    string toString() const {
+        return "Nombre: " + nombre + "\nDirección: " + direccion + "\nTeléfono: " + telefono;
     }
-
-    void setDireccion(const std::string& nuevaDireccion) {
-        direccion = nuevaDireccion;
-    }
-
-    void setTelefono(const std::string& nuevoTelefono) {
-        telefono = nuevoTelefono;
-    }
-
 };
+
 #endif // LABORATORIO_H_INCLUDED

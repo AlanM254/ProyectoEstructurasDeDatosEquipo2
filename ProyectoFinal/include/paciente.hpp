@@ -19,6 +19,7 @@ class Paciente{
 
     void setNss(const std::string&);
     void setCode(const std::string&);
+    void setName(const Name&);
 
     std::string toString() const;
     Paciente& operator=(const Paciente&);
